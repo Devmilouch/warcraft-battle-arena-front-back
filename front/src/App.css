@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "belwe-bold";   /*Can be any text*/
+  src: local("Belwe-Bold"), url("./fonts/Belwe-Bold.otf") format("opentype");
+}
+
+body, input, textarea, button { font-family: "belwe-bold"; }
+
+body {
+    overflow-x: hidden;
+}

@@ -1,0 +1,61 @@
+.labelInput {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #614326;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #7e5b3a;
+}
+
+.searchTerm:focus{
+    color: #614326;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #614326;
+    background: #614326;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #7e5b3a;
+}
+
+.delete_btn {
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: #fcd144;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.messages_and_deleteBtn {
+    display: flex;
+    flex-direction: column;
+}
