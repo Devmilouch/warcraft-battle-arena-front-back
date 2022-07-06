@@ -146,9 +146,9 @@ export const GlobalContextProvider = props => {
         //    console.log("Token valid : " + res.data.data);
         })
         .catch(error => {
-            console.log("Erreur : " + error);
-            if (error.data.data.name === "TokenExpiredError") handleErrorToken("TokenExpiredError");
-            if (error.data.data.name === "JsonWebTokenError") handleErrorToken("JsonWebTokenError")
+            console.log("Erreur : " + error.response.data.data.name);
+            if (error.response.data.data.name === "TokenExpiredError") handleErrorToken("TokenExpiredError");
+            if (error.response.data.data.name === "JsonWebTokenError") handleErrorToken("JsonWebTokenError")
         });
     }
 
